@@ -10,7 +10,7 @@ class SimpleBarChart extends StatelessWidget {
 
   /// Creates a [BarChart] with sample data and no transition.
   factory SimpleBarChart.withSampleData() {
-    return new SimpleBarChart(
+    return SimpleBarChart(
       _createSampleData(),
       // Disable animations for image tests.
       animate: false,
@@ -20,7 +20,7 @@ class SimpleBarChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new charts.BarChart(
+    return charts.BarChart(
       seriesList,
       animate: animate,
     );
@@ -29,14 +29,11 @@ class SimpleBarChart extends StatelessWidget {
   /// Create one series with sample hard coded data.
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
-      new OrdinalSales('2014', 5),
-      new OrdinalSales('2015', 25),
-      new OrdinalSales('2016', 100),
-      new OrdinalSales('2017', 75),
+      OrdinalSales('Размер', 5),
     ];
 
     return [
-      new charts.Series<OrdinalSales, String>(
+      charts.Series<OrdinalSales, String>(
         id: 'Sales',
         colorFn: (_, __) => charts.MaterialPalette.blue.shadeDefault,
         domainFn: (OrdinalSales sales, _) => sales.year,

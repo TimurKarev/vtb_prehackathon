@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vtb_prehackathon/pages/compound_interest_page/widgets/input_widget.dart';
 import 'package:vtb_prehackathon/timur/landing.dart';
 
 void main() {

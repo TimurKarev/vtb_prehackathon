@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vtb_prehackathon/pages/compound_interest_page/widgets/input_widget.dart';
 import 'package:vtb_prehackathon/timur/screens/animation_bar_default.dart';
 
 class Landing extends StatelessWidget {
@@ -8,7 +9,8 @@ class Landing extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: SimpleBarChart.withSampleData(),//SimpleBarChart.withSampleData(),
+      //body: CompoundInterestInputWidget(),
+      body: SimpleBarChart.withSampleData(),
     );
   }
 }
