@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vtb_prehackathon/pages/compound_interest_page/widgets/input_widget.dart';
-import 'package:vtb_prehackathon/timur/landing.dart';
+import 'package:vtb_prehackathon/pages/compound_interest/widgets/input_widget.dart';
+import 'package:vtb_prehackathon/pages/landing.dart';
 
 void main() {
   runApp(const MyApp());

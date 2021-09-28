@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vtb_prehackathon/pages/compound_interest_page/widgets/input_widget.dart';
-import 'package:vtb_prehackathon/timur/screens/animation_bar_default.dart';
+import 'package:vtb_prehackathon/pages/compound_interest/compound_interest_page.dart';
+
 
 class Landing extends StatelessWidget {
   const Landing({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class Landing extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       //body: CompoundInterestInputWidget(),
-      body: SimpleBarChart.withSampleData(),
+      body: CompoundInterestPage(),
     );
   }
 }
